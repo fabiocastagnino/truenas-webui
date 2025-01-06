@@ -25,6 +25,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ixsystems/truenas-webui:latest
+          tags: fabiocastagnino/truenas-webui:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
