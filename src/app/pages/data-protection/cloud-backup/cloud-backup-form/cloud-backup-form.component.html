@@ -26,7 +26,7 @@
             formControlName="credentials"
             [label]="helptext.credentials_placeholder | translate"
             [tooltip]="helptext.credentials_tooltip | translate"
-            [filterByProviders]="[CloudSyncProviderName.Storj]"
+            [filterByProviders]="[CloudSyncProviderName.Storj, CloudSyncProviderName.AmazonS3]"
             [required]="true"
           ></ix-cloud-credentials-select>
           @if (form.controls.bucket.enabled) {
